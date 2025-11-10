@@ -1,0 +1,10 @@
+{
+  "name": "lexlens-shared",
+  "version": "1.0.0",
+  "description": "Shared types and schemas for LexLens",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  }
+}
+
