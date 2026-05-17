@@ -1,7 +1,8 @@
 node_modules
 npm-debug.log
 .env
-.env.local
+.env.*
+.env*
 .git
 .gitignore
 README.md
@@ -10,5 +11,8 @@ README.md
 dist
 build
 coverage
+logs
+backend/logs
+backend/uploads
 *.md
 

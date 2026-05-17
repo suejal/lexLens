@@ -1,43 +1,35 @@
 {
   "name": "lexlens-backend",
-  "version": "1.0.0",
-  "description": "LexLens Backend API",
-  "main": "src/server.js",
+  "version": "2.0.0",
+  "description": "LexLens backend rewrite with TypeScript",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "nodemon src/server.js",
-    "start": "node src/server.js",
-    "test": "jest --coverage",
-    "migrate": "node src/database/migrate.js",
-    "seed": "node src/database/seed.js"
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts"
   },
   "dependencies": {
-    "express": "^4.18.2",
+    "axios": "^1.6.8",
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "pg": "^8.11.3",
-    "pgvector": "^0.1.8",
-    "redis": "^4.6.10",
-    "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.4.5",
+    "express": "^5.0.0-beta.1",
+    "helmet": "^7.1.0",
+    "mammoth": "^1.7.2",
     "multer": "^1.4.5-lts.1",
     "pdf-parse": "^1.1.1",
-    "mammoth": "^1.6.0",
-    "openai": "^4.20.1",
-    "natural": "^6.10.4",
-    "compromise": "^14.10.0",
-    "diff": "^5.1.0",
-    "bull": "^4.12.0",
-    "joi": "^17.11.0",
-    "helmet": "^7.1.0",
-    "express-rate-limit": "^7.1.5",
-    "morgan": "^1.10.0",
-    "winston": "^3.11.0",
-    "@xenova/transformers": "^2.6.0"
+    "pdfkit": "^0.14.0",
+    "pg": "^8.11.5"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2",
-    "jest": "^29.7.0",
-    "supertest": "^6.3.3"
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.11",
+    "@types/node": "^20.12.7",
+    "@types/pdf-parse": "^1.1.4",
+    "@types/pdfkit": "^0.13.4",
+    "@types/pg": "^8.11.5",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5"
   }
 }
-
